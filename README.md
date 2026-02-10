@@ -10,8 +10,7 @@ This project captures video from a webcam, detects faces, and then detects eyes 
 * Real-time face detection using Haar Cascades
 * Eye detection inside detected face regions
 * Webcam video processing
-* Clean and beginner-friendly code structure
-* Suitable for **computer vision portfolios and resumes**
+
 
 ---
 
