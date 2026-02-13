@@ -26,7 +26,8 @@ This project captures video from a webcam, detects faces, and then detects eyes 
 
 ```
 face-tracking/
-│── face_tracking.py
+│── face_tracking.py              # Main executable script
+│── SmartFaceTracking.ipynb       # Jupyter Notebook version (learning/demo)
 │── models/
 │   ├── haarcascade_frontalface_default.xml
 │   └── haarcascade_eye.xml
