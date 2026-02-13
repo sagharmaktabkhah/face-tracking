@@ -10,7 +10,8 @@ This project captures video from a webcam, detects faces, and then detects eyes 
 * Real-time face detection using Haar Cascades
 * Eye detection inside detected face regions
 * Webcam video processing
-
+* Clean and beginner-friendly code structure
+* Suitable for **computer vision portfolios and resumes**
 
 ---
 
@@ -26,8 +27,7 @@ This project captures video from a webcam, detects faces, and then detects eyes 
 
 ```
 face-tracking/
-│── face_tracking.py              # Main executable script
-│── SmartFaceTracking.ipynb       # Jupyter Notebook version (learning/demo)
+│── face_tracking.py
 │── models/
 │   ├── haarcascade_frontalface_default.xml
 │   └── haarcascade_eye.xml
@@ -36,16 +36,16 @@ face-tracking/
 
 ---
 
-##  Installation & Setup
+## ⚙️ Installation & Setup
 
-###  Clone the repository
+### 1 Clone the repository
 
 ```bash
 git clone https://github.com/sagharmaktabkhah/face-tracking.git
 cd face-tracking
 ```
 
-###  Install dependencies
+### 2 Install dependencies
 
 Make sure Python is installed, then run:
 
@@ -53,7 +53,7 @@ Make sure Python is installed, then run:
 pip install opencv-python
 ```
 
-###  Download Haar Cascade models
+### 3 Download Haar Cascade models
 
 Make sure the following files are placed inside the `models/` directory:
 
@@ -74,14 +74,7 @@ python face_tracking.py
 * Make sure your webcam is connected and accessible.
 
 ---
-## Jupyter Notebook Version
-If you prefer working interactively, you can open:
-SmartFaceTracking.ipynb
 
-Run it using Jupyter Notebook:
-jupyter notebook
-
----
 ##  How It Works
 
 1. Capture frames from the webcam
@@ -99,25 +92,14 @@ This project is ideal for:
 
 * Learning **Computer Vision basics**
 * Understanding real-time image processing
-* Building a **portfolio project**
-* Preparing for technical interviews
 
 ---
 
-##  Future Improvements
-
-* Face tracking with unique IDs
-* Integration with MediaPipe or deep learning models
-* Performance optimization
-* Face recognition support
-
----
-
-##  Author
+## 👤 Author
 
 **Saghar Maktabkhah**
 GitHub: [https://github.com/sagharmaktabkhah](https://github.com/sagharmaktabkhah)
 
 ---
 
-⭐ If you like this project, feel free to star the repository!
+If you like this project, feel free to star the repository!
