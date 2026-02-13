@@ -74,7 +74,14 @@ python face_tracking.py
 * Make sure your webcam is connected and accessible.
 
 ---
+## Jupyter Notebook Version
+If you prefer working interactively, you can open:
+SmartFaceTracking.ipynb
 
+Run it using Jupyter Notebook:
+jupyter notebook
+
+---
 ##  How It Works
 
 1. Capture frames from the webcam
