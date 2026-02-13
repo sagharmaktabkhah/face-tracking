@@ -1,17 +1,18 @@
-#  Face Tracking with Python & OpenCV
+#  Head-Controlled Mouse using Face Tracking (Python & OpenCV)
 
-A real-time **Face and Eye Tracking** project implemented in **Python** using **OpenCV** and Haar Cascade classifiers.
-This project captures video from a webcam, detects faces, and then detects eyes within each detected face.
+A real-time **Head-Controlled Mouse Automation System** built with **Python**, **OpenCV**, and **PyAutoGUI**.
+This project detects the user's face through a webcam and maps head movement to control the system mouse cursor.
 
 ---
 
 ##  Features
 
-* Real-time face detection using Haar Cascades
-* Eye detection inside detected face regions
-* Webcam video processing
-* Clean and beginner-friendly code structure
-* Suitable for **computer vision portfolios and resumes**
+*  Real-time face detection using Haar Cascades
+*  Head-controlled mouse movement
+*  Live webcam processing
+*  Face position mapped to full screen resolution
+*  Clean and modular Python structure
+*  Portfolio-ready computer vision project
 
 ---
 
@@ -19,6 +20,7 @@ This project captures video from a webcam, detects faces, and then detects eyes 
 
 * **Python 3**
 * **OpenCV (cv2)**
+* **PyAutoGUI**
 * Haar Cascade Classifiers
 
 ---
@@ -36,7 +38,7 @@ face-tracking/
 
 ---
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
 ### 1 Clone the repository
 
@@ -47,15 +49,13 @@ cd face-tracking
 
 ### 2 Install dependencies
 
-Make sure Python is installed, then run:
-
 ```bash
-pip install opencv-python
+pip install opencv-python pyautogui
 ```
 
-### 3 Download Haar Cascade models
+### 3 Make sure Haar Cascade models exist
 
-Make sure the following files are placed inside the `models/` directory:
+Place the following files inside the `models/` folder:
 
 * `haarcascade_frontalface_default.xml`
 * `haarcascade_eye.xml`
@@ -70,36 +70,48 @@ You can download them from the official OpenCV GitHub repository.
 python face_tracking.py
 ```
 
-* Press **Q** to quit the application.
-* Make sure your webcam is connected and accessible.
+* Move your head to control the mouse cursor
+* Press **Q** to exit the application
+* Ensure your webcam is accessible
 
 ---
 
 ##  How It Works
 
-1. Capture frames from the webcam
-2. Convert frames to grayscale
-3. Detect faces using Haar Cascade classifier
-4. Detect eyes within each detected face
-5. Draw bounding boxes around faces and eyes
-6. Display the processed video in real time
+1. Capture video frames from webcam
+2. Detect face using Haar Cascade
+3. Compute the center of the detected face
+4. Map face coordinates to screen resolution
+5. Move mouse cursor using PyAutoGUI
+6. Display processed video with visual tracking
 
 ---
 
-##  Use Case
+##  Use Cases
 
-This project is ideal for:
-
-* Learning **Computer Vision basics**
-* Understanding real-time image processing
+* Learning real-time computer vision
+* Understanding coordinate mapping
+* Human-computer interaction experiments
+* Assistive technology prototypes
+* Portfolio and resume enhancement
 
 ---
 
-## 👤 Author
+##  Future Improvements
+
+* Smooth cursor movement (motion filtering)
+* Sensitivity control settings
+* Eye-blink detection for mouse click
+* Scroll control using head tilt
+* Replace Haar Cascade with MediaPipe or deep learning model
+
+---
+
+##  Author
 
 **Saghar Maktabkhah**
 GitHub: [https://github.com/sagharmaktabkhah](https://github.com/sagharmaktabkhah)
 
 ---
 
-If you like this project, feel free to star the repository!
+⭐ If you found this project interesting, consider giving it a star!
